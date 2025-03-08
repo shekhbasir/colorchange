@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>now color changing project</title>
+<style>
+  #bas{
+    height: 500px;
+    width: 500px;
+  }
+  .box {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+  }
+  #red { background-color: red; }
+  #blue { background-color: blue; }
+  #green { background-color: green; }
+  #white { background-color: white; color: black; border: 1px solid black; }
+
+</style>
+
+</head>
+<body id="bod">
+ 
+  <div id="bas">
+    <div id="red" class="box">A</div>
+  <div id="blue" class="box">B</div>
+  <div id="green" class="box">C</div>
+  <div id="white" class="box">D</div>
+
+  </div>
+
+  <script>
+    let body=document.getElementById('bod');
+
+    let redy=document.getElementById('red');
+    redy.addEventListener('click',function(){
+      body.style.backgroundColor="red";      
+    })
+
+    let blue=document.getElementById('blue')
+    blue.addEventListener('click',()=>{
+      body.style.backgroundColor="blue";
+    })
+
+    let green=document.getElementById('green')
+    green.addEventListener('click',()=>{
+      body.style.backgroundColor="green";
+    })
+
+    let white=document.getElementById('white')
+    white.addEventListener('click',()=>{
+      body.style.backgroundColor="white";
+    })
+  </script>
+  
+</body>
+</html>
